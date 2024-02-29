@@ -1,0 +1,65 @@
+:root {
+    --warna-1: #EEEDEB;
+    --warna-2: #E0CCBE;
+    --warna-3: #747264;
+    --warna-4: #3C3633;
+    --warna-base: #EEEBDD;
+    --warna-6: #810000;
+    --warna-7: #630000;
+    --warna-font: #1B1717;
+  }
+
+BebasNeue {
+    font-family: 'BebasNeue', sans-serif;
+}
+
+/* HEADER */
+body {
+margin: 0; /* Remove default margin */
+}
+
+.site-header {
+    background-color: #000;
+    color: #EEEBDD;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+    z-index: 900;
+    width: 100%;
+    top: 0;
+    font-family: BebasNeue, Arial, Helvetica;
+}
+
+.logo {
+    margin-right: auto; /* Push logo to the left */
+}
+
+a.logo {
+    margin: 10px;
+    padding-bottom: 5px;
+}
+
+.logo img {
+    width: 250px;
+    height: auto;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Mengubah tata letak menjadi flex */
+}
+
+nav ul li a {
+    color: #EEEBDD;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 95px;
+    font-size: 25px;
+}
