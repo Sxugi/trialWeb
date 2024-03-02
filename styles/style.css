@@ -37,7 +37,7 @@ header {
     padding: 30px 0;
 }
 
-div.container-empty {
+nav.container-empty {
     background-color: #000;
     font-family: "Bebas Neue", sans-serif;
     max-width: 100%;
