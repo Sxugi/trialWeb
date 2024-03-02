@@ -186,16 +186,18 @@ video {
 .container {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    max-width: 1598px;
-    position: relative;
 }
 
 .pic-grid ul {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    width: 115%;
+
+}
+
+.pic-grid ul li {
+    overflow: hidden;
+    width: calc(25% - 16px);
+    margin: 0 16px 16px 0;
 }
 
 @media screen and (max-width: 1468px) {
