@@ -1,7 +1,7 @@
 // Menjalankan fungsi saat dokumen HTML telah sepenuhnya dimuat
 document.addEventListener("DOMContentLoaded", function() {
-    // Mengambil semua elemen dengan kelas '.header1 .nav>li'
-    var navItems = document.querySelectorAll('.header1 .nav>li');
+    // Mengambil semua elemen dengan kelas '.header .nav>li'
+    var navItems = document.querySelectorAll('.header .nav>li');
 
     // Iterasi melalui setiap elemen navItems
     navItems.forEach(function(item) {
@@ -25,13 +25,6 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-});
-
-// Menjalankan fungsi saat dokumen HTML telah sepenuhnya dimuat
-document.addEventListener("DOMContentLoaded", function() {
-    // Mengambil semua elemen dengan kelas '.header1 .nav>li'
-    var navItems = document.querySelectorAll('.header1 .nav>li');
-
     // Iterasi melalui setiap elemen navItems
     navItems.forEach(function(item) {
         // Menambahkan event listener untuk saat mouse masuk
@@ -46,10 +39,7 @@ document.addEventListener("DOMContentLoaded", function() {
             document.querySelector('header').classList.remove('over');
         });
     });
-});
-
-// Menjalankan fungsi saat dokumen HTML telah sepenuhnya dimuat
-document.addEventListener('DOMContentLoaded', function() {
+    
     // Mengambil semua elemen dengan kelas '.hover-box'
     const hoverBoxes = document.querySelectorAll('.hover-box');
 
@@ -67,10 +57,6 @@ document.addEventListener('DOMContentLoaded', function() {
             hoverBox.querySelector('.hover').style.opacity = '0';
         });
     });
-});
-
-// Menjalankan fungsi saat dokumen HTML telah sepenuhnya dimuat
-document.addEventListener('DOMContentLoaded', function () {
     // Mengambil elemen dengan kelas '.burger-menu'
     const burgerMenu = document.querySelector('.burger-menu');
     // Mengambil elemen dengan kelas '.nav'

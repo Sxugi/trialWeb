@@ -37,12 +37,6 @@ header {
     padding: 30px 0;
 }
 
-header .container {
-    max-width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
 div.container-empty {
     background-color: #000;
     font-family: "Bebas Neue", sans-serif;
@@ -55,7 +49,7 @@ div.container-empty {
     justify-content: space-between;
 }
 
-.header1 .nav {
+.header .nav {
     position: relative;
     display: flex;
     flex-wrap: nowrap;
@@ -63,7 +57,7 @@ div.container-empty {
     align-items: center;
 }
 
-.header1 .nav>li {
+.header .nav>li {
     position: relative;
     font-size: 2rem;
     font-weight: 600;
@@ -74,7 +68,7 @@ div.container-empty {
     align-items: center;
 }
 
-.header1 .nav.bar>li.main-menu>a {
+.header .nav.bar>li.main-menu>a {
     color: #fff;
     text-decoration: none;
 }
@@ -83,7 +77,7 @@ ul {
     list-style-type: none;
 }
 
-.header1 .nav>li .sub_menu {
+.header .nav>li .sub_menu {
     display: none;
     position: relative;
     top: 0;
@@ -93,7 +87,7 @@ ul {
     font-family: "Arial", sans-serif;
 }
 
-.header1 .nav>li .sub_menu a {
+.header .nav>li .sub_menu a {
     display: flex;
     padding-bottom: 16px;
     text-transform: uppercase;
@@ -102,7 +96,7 @@ ul {
     text-decoration: none;
 }
 
-.header1 .nav>li a {
+.header .nav>li a {
     position: relative;
     z-index: 1;
 }
@@ -136,16 +130,16 @@ header.over::after {
 }
 
 @media screen and (max-width: 1268px) {
-    .header1 .nav {
+    .header .nav {
         display: none; 
     }
 
-    .header1 .burger-menu {
+    .header .burger-menu {
         display: flex;
         align-items: center; 
     }
 
-    .header1 .nav.show {
+    .header .nav.show {
         display: flex; 
         flex-direction: column;
         background-color: #000;
@@ -155,7 +149,7 @@ header.over::after {
         left: -40px;
     }
 
-    .header1 .nav.show>li {
+    .header .nav.show>li {
         padding: 20px 0; 
     }
 }
@@ -182,7 +176,7 @@ video {
     width: 100%;
 }
 
-.visual-grid {
+.pic-grid {
     margin-bottom: 128px;
 }
 
@@ -194,7 +188,7 @@ video {
     position: relative;
 }
 
-.visual-grid ul {
+.pic-grid ul {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -202,21 +196,21 @@ video {
 }
 
 @media screen and (max-width: 1468px) {
-    .visual-grid ul {
+    .pic-grid ul {
         width: fit-content;
     }
 }
 
-.visual-grid .artist-list li {
+.pic-grid .members-list li {
     width: calc(25% - 16px);
     margin: 0 16px 16px 0;
 }
 
-.visual-grid .artist-list .hover-box {
+.pic-grid .members-list .hover-box {
     position: relative;
 }
 
-.visual-grid .artist-list .hover {
+.pic-grid .members-list .hover {
     opacity: 0;
     position: absolute;
     width: 100%;
@@ -224,7 +218,7 @@ video {
     transition: opacity .75s;
 }
 
-.visual-grid .artist-list .hover a {
+.pic-grid .members-list .hover a {
     position: relative;
     height: 100%;
     display: flex;
@@ -234,13 +228,13 @@ video {
     text-decoration: none;
 }
 
-.visual-grid .artist-list li img {
+.pic-grid .members-list li img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.visual-grid .artist-list .hover a p {
+.pic-grid .members-list .hover a p {
     position: relative;
     color: #810000;
     font-size: 3rem;
@@ -251,7 +245,7 @@ video {
 }
 
 @media screen and (max-width: 1268px) {
-    .visual-grid .artist-list .hover a p {
+    .pic-grid .members-list .hover a p {
         position: relative;
         color: #810000;
         font-size: 1rem;
@@ -286,7 +280,7 @@ video {
     margin-right: 37.5px;
 }
 
-.artists_history {
+.kiof-history {
     padding-top: 25px;
     display: flex;
     flex-wrap: wrap;
@@ -311,7 +305,7 @@ video {
 }
 
 .content {
-    width: calc(100% - 510px), fit-content;
+    width: fit-content;
 }
 
 .history_ach {
@@ -322,15 +316,15 @@ video {
     flex-direction: row;
 }
 
-.artists_history .history_ach {
+.kiof-history .history_ach {
     margin-bottom: 25px;
 }
 
-.artists_history .history > li.on {
+.kiof-history .history > li.on {
     display: block;
 }
 
-.artists_history .history > li div {
+.kiof-history .history > li div {
     display: flex;
     flex-wrap: nowrap;
     margin-bottom: 40px;
@@ -348,14 +342,14 @@ h2.achievments :-webkit-any-link {
     color: #fff;
 }
 
-.artists_history .history > li h3 {
+.kiof-history .history > li h3 {
     font-size: 1.1rem;
     line-height: 1.5;
     width: 70px;
     font-family: "klavika-web", sans-serif;
 }
 
-.artists_history .history .month {
+.kiof-history .history .month {
     width: 30px;
     font-size: 1.1rem;
     line-height: 1.5;
@@ -364,7 +358,7 @@ h2.achievments :-webkit-any-link {
     color: #fff;
 }
 
-.artists_history .history .txt {
+.kiof-history .history .txt {
     width: calc(100% - 100px);
     padding-left: 28px;
     letter-spacing: -0.02em;
@@ -378,12 +372,12 @@ h2.achievments :-webkit-any-link {
 }
 
 @media (max-width: 1268px) {
-    .ly_flex {
+    .flexible {
         flex-direction: column;
         align-items: flex-start; 
     }
 
-    .ly_tit {
+    .layout_ach {
         margin-bottom: 20px; 
     }
 
