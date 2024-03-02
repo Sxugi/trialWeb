@@ -51,3 +51,12 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    const burgerMenu = document.querySelector('.burger-menu');
+    const gnb = document.querySelector('.gnb');
+
+    burgerMenu.addEventListener('click', function () {
+        gnb.classList.toggle('show');
+    });
+});
