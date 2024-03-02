@@ -1,10 +1,10 @@
 // Menjalankan fungsi saat dokumen HTML telah sepenuhnya dimuat
 document.addEventListener("DOMContentLoaded", function() {
-    // Mengambil semua elemen dengan kelas '.header1 .gnb>li'
-    var gnbItems = document.querySelectorAll('.header1 .gnb>li');
+    // Mengambil semua elemen dengan kelas '.header1 .nav>li'
+    var navItems = document.querySelectorAll('.header1 .nav>li');
 
-    // Iterasi melalui setiap elemen gnbItems
-    gnbItems.forEach(function(item) {
+    // Iterasi melalui setiap elemen navItems
+    navItems.forEach(function(item) {
         // Menambahkan event listener untuk saat mouse masuk
         item.addEventListener('mouseover', function() {
             // Mengambil submenu dari elemen yang dihover
@@ -29,11 +29,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // Menjalankan fungsi saat dokumen HTML telah sepenuhnya dimuat
 document.addEventListener("DOMContentLoaded", function() {
-    // Mengambil semua elemen dengan kelas '.header1 .gnb>li'
-    var gnbItems = document.querySelectorAll('.header1 .gnb>li');
+    // Mengambil semua elemen dengan kelas '.header1 .nav>li'
+    var navItems = document.querySelectorAll('.header1 .nav>li');
 
-    // Iterasi melalui setiap elemen gnbItems
-    gnbItems.forEach(function(item) {
+    // Iterasi melalui setiap elemen navItems
+    navItems.forEach(function(item) {
         // Menambahkan event listener untuk saat mouse masuk
         item.addEventListener('mouseenter', function() {
             // Menambahkan kelas 'over' pada elemen header saat mouse masuk
@@ -73,12 +73,12 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener('DOMContentLoaded', function () {
     // Mengambil elemen dengan kelas '.burger-menu'
     const burgerMenu = document.querySelector('.burger-menu');
-    // Mengambil elemen dengan kelas '.gnb'
-    const gnb = document.querySelector('.gnb');
+    // Mengambil elemen dengan kelas '.nav'
+    const nav = document.querySelector('.nav');
 
     // Menambahkan event listener untuk saat tombol burger menu diklik
     burgerMenu.addEventListener('click', function () {
-        // Toggle kelas 'show' pada elemen dengan kelas '.gnb' saat tombol diklik
-        gnb.classList.toggle('show');
+        // Toggle kelas 'show' pada elemen dengan kelas '.nav' saat tombol diklik
+        nav.classList.toggle('show');
     });
 });

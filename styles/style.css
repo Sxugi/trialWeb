@@ -11,7 +11,7 @@ body {
 }
 
 .logo {
-    margin-right: auto; /* Push logo to the left */
+    margin-right: auto; 
 }
 
 a.logo {
@@ -21,7 +21,7 @@ a.logo {
 .logo img {
     width: 300px;
     height: auto;
-    transition: filter 0.2s linear; /* Add transition for smooth effect */
+    transition: filter 0.2s linear; 
 }
 
 header.over, logo img {
@@ -55,7 +55,7 @@ div.container-empty {
     justify-content: space-between;
 }
 
-.header1 .gnb {
+.header1 .nav {
     position: relative;
     display: flex;
     flex-wrap: nowrap;
@@ -63,7 +63,7 @@ div.container-empty {
     align-items: center;
 }
 
-.header1 .gnb>li {
+.header1 .nav>li {
     position: relative;
     font-size: 2rem;
     font-weight: 600;
@@ -74,7 +74,7 @@ div.container-empty {
     align-items: center;
 }
 
-.header1 .gnb.color>li.off>a {
+.header1 .nav.bar>li.main-menu>a {
     color: #fff;
     text-decoration: none;
 }
@@ -83,7 +83,7 @@ ul {
     list-style-type: none;
 }
 
-.header1 .gnb>li .sub_menu {
+.header1 .nav>li .sub_menu {
     display: none;
     position: relative;
     top: 0;
@@ -93,7 +93,7 @@ ul {
     font-family: "Arial", sans-serif;
 }
 
-.header1 .gnb>li .sub_menu a {
+.header1 .nav>li .sub_menu a {
     display: flex;
     padding-bottom: 16px;
     text-transform: uppercase;
@@ -102,7 +102,7 @@ ul {
     text-decoration: none;
 }
 
-.header1 .gnb>li a {
+.header1 .nav>li a {
     position: relative;
     z-index: 1;
 }
@@ -124,29 +124,29 @@ header.over::after {
 }
 
 .burger-menu {
-    display: none; /* Burger menu initially hidden */
+    display: none; 
     cursor: pointer;
     align-items: center;
-    margin-right: 20px; /* Margin for burger menu */
+    margin-right: 20px; 
 }
 
 .burger-menu i {
-    font-size: 24px; /* Sesuaikan ukuran ikon */
-    color: #fff; /* Sesuaikan warna ikon */
+    font-size: 24px; 
+    color: #fff;
 }
 
 @media screen and (max-width: 1268px) {
-    .header1 .gnb {
-        display: none; /* Hide menu items on small screens */
+    .header1 .nav {
+        display: none; 
     }
 
     .header1 .burger-menu {
         display: flex;
-        align-items: center; /* Center burger menu vertically */
+        align-items: center; 
     }
 
-    .header1 .gnb.show {
-        display: flex; /* Show menu items when burger menu is clicked */
+    .header1 .nav.show {
+        display: flex; 
         flex-direction: column;
         background-color: #000;
         width: 100%;
@@ -155,8 +155,8 @@ header.over::after {
         left: -40px;
     }
 
-    .header1 .gnb.show>li {
-        padding: 20px 0; /* Adjust padding for better spacing */
+    .header1 .nav.show>li {
+        padding: 20px 0; 
     }
 }
 
@@ -293,7 +293,7 @@ video {
     width: fit-content;
 }
 
-.ly_flex {
+.flexible {
     display: flex;
     flex-wrap: nowrap;
     color: #fff;
@@ -302,7 +302,7 @@ video {
     flex-direction: column;
 }
 
-.ly_tit {
+.layout_ach {
     width: 510px;
     padding-right: 40px;
     line-height: 1.18;
@@ -310,11 +310,11 @@ video {
     color: #fff;
 }
 
-.ly_cont {
+.content {
     width: calc(100% - 510px), fit-content;
 }
 
-.history_tit {
+.history_ach {
     margin: 12px 0 30px;
     display: flex;
     flex-wrap: nowrap;
@@ -322,7 +322,7 @@ video {
     flex-direction: row;
 }
 
-.artists_history .history_tit {
+.artists_history .history_ach {
     margin-bottom: 25px;
 }
 
@@ -338,7 +338,7 @@ video {
     width: fit-content;
 }
 
-h2.on-f20 :-webkit-any-link {
+h2.achievments :-webkit-any-link {
     color: #fff;
     cursor: pointer;
     text-decoration: underline;
@@ -379,12 +379,12 @@ h2.on-f20 :-webkit-any-link {
 
 @media (max-width: 1268px) {
     .ly_flex {
-        flex-direction: column; /* Mengubah tata letak menjadi vertikal */
-        align-items: flex-start; /* Mengatur item agar mulai dari kiri */
+        flex-direction: column;
+        align-items: flex-start; 
     }
 
     .ly_tit {
-        margin-bottom: 20px; /* Menambahkan ruang antara judul */
+        margin-bottom: 20px; 
     }
 
     ul.history {
@@ -396,31 +396,30 @@ h2.on-f20 :-webkit-any-link {
 /* FOOTER */
 
 footer {
-    background-color: #fff; /* Mengubah warna latar belakang footer */
-    color: #000; /* Mengubah warna teks pada footer */
-    padding: 50px 20px; /* Menambahkan padding pada footer */
+    background-color: #fff; 
+    color: #000; 
+    padding: 50px 20px; 
 }
 
 .footer-content {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    position: relative;
 }
 
 .footer-logo img {
-    width: 200px; /* Mengubah lebar logo footer */
-    height: auto; /* Menyesuaikan ketinggian logo secara proporsional */
+    width: 200px; 
+    height: auto; 
     filter: invert(1);
 }
 
 .footer-info {
-    flex-basis: 45%; /* Menentukan ukuran basis flex untuk bagian informasi */
+    flex-basis: 45%; 
 }
 
 .footer-social {
-    flex-basis: 30%; /* Menentukan ukuran basis flex untuk bagian sosial media */
+    flex-basis: 30%; 
 }
 
 .social-links {
@@ -431,21 +430,21 @@ footer {
 
 .social-links li {
     display: inline-block;
-    margin-right: 10px; /* Mengatur jarak antara ikon sosial media */
+    margin-right: 10px; 
 }
 
 .social-links li:last-child {
-    margin-right: 0; /* Menghapus margin kanan pada ikon sosial media terakhir */
+    margin-right: 0; 
 }
 
 .social-links a {
-    color: #000; /* Mengubah warna ikon sosial media */
-    font-size: 24px; /* Mengatur ukuran ikon sosial media */
+    color: #000; 
+    font-size: 24px; 
 }
 
 .footer-bottom {
-    margin-top: 20px; /* Menambahkan jarak antara konten footer dan footer-bottom */
-    border-top: 1px solid #000; /* Menambahkan garis atas pada footer-bottom */
-    padding-top: 20px; /* Menambahkan padding atas pada footer-bottom */
-    text-align: center; /* Mengatur teks pada footer-bottom menjadi rata tengah */
+    margin-top: 20px; 
+    border-top: 1px solid #000; 
+    padding-top: 20px; 
+    text-align: center; 
 }
