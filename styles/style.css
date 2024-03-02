@@ -98,7 +98,7 @@ ul {
     position: relative;
     top: 0;
     left: 20px;
-    padding-top: 75px;
+    padding-top: 25px;
     font-size: 1rem;
     font-family: "Arial", sans-serif;
 }
@@ -145,7 +145,7 @@ header.over::after {
     color: #fff; /* Sesuaikan warna ikon */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1268px) {
     .header1 .gnb {
         display: none; /* Hide menu items on small screens */
     }
@@ -213,6 +213,12 @@ video {
     width: 115%;
 }
 
+@media screen and (max-width: 1268px) {
+    .visual-grid ul {
+        width: fit-content;
+    }
+}
+
 .visual-grid .artist-list li {
     width: calc(25% - 16px);
     margin: 0 16px 16px 0;
@@ -256,6 +262,19 @@ video {
     z-index: 1;
 }
 
+@media screen and (max-width: 1268px) {
+    .visual-grid .artist-list .hover a p {
+        position: relative;
+        color: #810000;
+        font-size: 1rem;
+        font-family: "klavika-web"!important;
+        text-transform: uppercase;
+        font-weight: 600;
+        z-index: 1;
+    }
+}
+
+
 .information {
     background-color: #000;
     padding: 50px 0;
@@ -286,8 +305,6 @@ video {
 .artists section .container {
     max-width: 1280px;
 }
-
-
 
 .ly_flex {
     display: flex;
@@ -334,8 +351,6 @@ video {
 .artists_history .history > li.on {
     display: block;
 }
-
-
 
 /* FOOTER */
 
