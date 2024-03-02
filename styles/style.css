@@ -77,7 +77,7 @@ ul {
     list-style-type: none;
 }
 
-.header .nav>li .sub_menu {
+.header .nav > li .sub_menu {
     display: none;
     position: relative;
     top: 0;
@@ -87,7 +87,7 @@ ul {
     font-family: "Arial", sans-serif;
 }
 
-.header .nav>li .sub_menu a {
+.header .nav > li .sub_menu a {
     display: flex;
     padding-bottom: 16px;
     text-transform: uppercase;
@@ -156,6 +156,11 @@ header.over::after {
 
 /* MAIN */
 
+main {
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
     display: flex;
     justify-content: center;
@@ -166,18 +171,16 @@ h1 {
     font-weight: 600;
 }
 
-aside {
+video {
     display: flex;
     flex-wrap: wrap;
-}
-
-video {
     object-fit: cover;
     width: 100%;
 }
 
-.pic-grid {
-    margin-bottom: 128px;
+#page {
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -238,7 +241,7 @@ video {
     position: relative;
     color: #810000;
     font-size: 3rem;
-    font-family: "klavika-web"!important;
+    font-family: 'Times New Roman', Times, serif !important;
     text-transform: uppercase;
     font-weight: 600;
     z-index: 1;
@@ -249,7 +252,7 @@ video {
         position: relative;
         color: #810000;
         font-size: 1rem;
-        font-family: "klavika-web"!important;
+        font-family: 'Times New Roman', Times, serif !important;
         text-transform: uppercase;
         font-weight: 600;
         z-index: 1;
@@ -258,9 +261,7 @@ video {
 
 
 .information {
-    background-color: #000;
     padding: 50px 0;
-    margin-top: -150px;
 }
 
 .information h2 {
@@ -284,28 +285,17 @@ video {
     padding-top: 25px;
     display: flex;
     flex-wrap: wrap;
-    width: fit-content;
+    width: 100%;
 }
 
-.flexible {
+.wraper {
     display: flex;
     flex-wrap: nowrap;
     color: #fff;
     margin-left: 40px;
     font-family: "Bebas Neue";
     flex-direction: column;
-}
-
-.layout_ach {
-    width: 510px;
-    padding-right: 40px;
-    line-height: 1.18;
-    text-transform: capitalize;
-    color: #fff;
-}
-
-.content {
-    width: fit-content;
+    width: 100%;
 }
 
 .history_ach {
@@ -346,14 +336,15 @@ h2.achievments :-webkit-any-link {
     font-size: 1.1rem;
     line-height: 1.5;
     width: 70px;
-    font-family: "klavika-web", sans-serif;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-weight: bold;
 }
 
 .kiof-history .history .month {
     width: 30px;
     font-size: 1.1rem;
     line-height: 1.5;
-    font-family: "klavika-web", sans-serif;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
     font-weight: 700;
     color: #fff;
 }
@@ -392,28 +383,34 @@ h2.achievments :-webkit-any-link {
 footer {
     background-color: #fff; 
     color: #000; 
-    padding: 50px 20px; 
+    padding: 20px 10px; 
 }
 
 .footer-content {
     display: flex;
     flex-wrap: nowrap;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
+}
+
+@media (max-width: 768px) {
+    footer .footer-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-info {
+        text-align: center;
+    }
 }
 
 .footer-logo img {
     width: 200px; 
     height: auto; 
     filter: invert(1);
-}
-
-.footer-info {
-    flex-basis: 45%; 
-}
-
-.footer-social {
-    flex-basis: 30%; 
 }
 
 .social-links {
