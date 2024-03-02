@@ -1,14 +1,4 @@
-:root {
-    --warna-1: #EEEDEB;
-    --warna-2: #E0CCBE;
-    --warna-3: #747264;
-    --warna-4: #3C3633;
-    --warna-base: #EEEBDD;
-    --warna-6: #810000;
-    --warna-7: #630000;
-    --warna-font: #1B1717;
-  }
-
+/* FONT */
 BebasNeue {
     font-family: 'BebasNeue';
 } 
@@ -130,7 +120,7 @@ header::after {
 }
 
 header.over::after {
-    height: 225px;
+    height: 170px;
 }
 
 .burger-menu {
@@ -162,9 +152,7 @@ header.over::after {
         width: 100%;
         position: absolute;
         top: 100px;
-        left: 0;
-        padding-left: 20px; /* Adjust padding for better alignment */
-        padding-right: 20px; /* Adjust padding for better alignment */
+        left: -40px;
     }
 
     .header1 .gnb.show>li {
@@ -200,10 +188,10 @@ video {
 
 .container {
     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
     max-width: 1598px;
     position: relative;
-    padding-left: -50px;
-    padding-right: 20px;
 }
 
 .visual-grid ul {
@@ -213,7 +201,7 @@ video {
     width: 115%;
 }
 
-@media screen and (max-width: 1268px) {
+@media screen and (max-width: 1468px) {
     .visual-grid ul {
         width: fit-content;
     }
@@ -299,16 +287,19 @@ video {
 }
 
 .artists_history {
-    padding-top: 100px;
-}
-
-.artists section .container {
-    max-width: 1280px;
+    padding-top: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
 }
 
 .ly_flex {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    color: #fff;
+    margin-left: 40px;
+    font-family: "Bebas Neue";
+    flex-direction: column;
 }
 
 .ly_tit {
@@ -316,42 +307,144 @@ video {
     padding-right: 40px;
     line-height: 1.18;
     text-transform: capitalize;
+    color: #fff;
 }
 
 .ly_cont {
-    width: calc(100% - 510px);
+    width: calc(100% - 510px), fit-content;
 }
 
 .history_tit {
-    margin: 12px 0 37px;
+    margin: 12px 0 30px;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+    flex-direction: row;
 }
 
 .artists_history .history_tit {
-    margin-bottom: 50px;
-}
-
-.history_tit h2.on {
-    position: relative;
-    opacity: 1;
-}
-
-.history_tit h2.on::after {
-    content: "";
-    width: 100%;
-    height: 3px;
-    background: #111;
-    position: absolute;
-    left: 0;
-    bottom: -9px;
+    margin-bottom: 25px;
 }
 
 .artists_history .history > li.on {
     display: block;
 }
 
+.artists_history .history > li div {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 40px;
+    font-size: 1.1rem;
+    width: fit-content;
+}
+
+h2.on-f20 :-webkit-any-link {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 2rem;
+    font-family: "Bebas Neue" !important;
+    font-weight: 600;
+    color: #fff;
+}
+
+.artists_history .history > li h3 {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    width: 70px;
+    font-family: "klavika-web", sans-serif;
+}
+
+.artists_history .history .month {
+    width: 30px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    font-family: "klavika-web", sans-serif;
+    font-weight: 700;
+    color: #fff;
+}
+
+.artists_history .history .txt {
+    width: calc(100% - 100px);
+    padding-left: 28px;
+    letter-spacing: -0.02em;
+    color: #fff;
+    font-weight: 500;
+    font-size: 0.94rem;
+    line-height: 1.88;
+    word-break: keep-all;
+    white-space: pre-line;
+    font-family: Arial;
+}
+
+@media (max-width: 1268px) {
+    .ly_flex {
+        flex-direction: column; /* Mengubah tata letak menjadi vertikal */
+        align-items: flex-start; /* Mengatur item agar mulai dari kiri */
+    }
+
+    .ly_tit {
+        margin-bottom: 20px; /* Menambahkan ruang antara judul */
+    }
+
+    ul.history {
+        padding: 0px;
+    }
+}
+
+
 /* FOOTER */
 
+footer {
+    background-color: #fff; /* Mengubah warna latar belakang footer */
+    color: #000; /* Mengubah warna teks pada footer */
+    padding: 50px 20px; /* Menambahkan padding pada footer */
+}
 
+.footer-content {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 200px; /* Mengubah lebar logo footer */
+    height: auto; /* Menyesuaikan ketinggian logo secara proporsional */
+    filter: invert(1);
+}
+
+.footer-info {
+    flex-basis: 45%; /* Menentukan ukuran basis flex untuk bagian informasi */
+}
+
+.footer-social {
+    flex-basis: 30%; /* Menentukan ukuran basis flex untuk bagian sosial media */
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px; /* Mengatur jarak antara ikon sosial media */
+}
+
+.social-links li:last-child {
+    margin-right: 0; /* Menghapus margin kanan pada ikon sosial media terakhir */
+}
+
+.social-links a {
+    color: #000; /* Mengubah warna ikon sosial media */
+    font-size: 24px; /* Mengatur ukuran ikon sosial media */
+}
+
+.footer-bottom {
+    margin-top: 20px; /* Menambahkan jarak antara konten footer dan footer-bottom */
+    border-top: 1px solid #000; /* Menambahkan garis atas pada footer-bottom */
+    padding-top: 20px; /* Menambahkan padding atas pada footer-bottom */
+    text-align: center; /* Mengatur teks pada footer-bottom menjadi rata tengah */
+}
