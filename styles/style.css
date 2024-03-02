@@ -403,9 +403,10 @@ footer {
 
 .footer-content {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .footer-logo img {
